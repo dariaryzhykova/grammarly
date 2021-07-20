@@ -71,7 +71,7 @@ Find usefull attachments in every test cases(logs, screenshots and video)
 ## Test results in AllureTestOps with auttomated and manually addded test cases
 ![alt "AllureTestOps"](./images/AllureTestOps.png)
 
-## Telegram notification of test results
+## Telegram notification of test results (join to the telegram group: @grammarly_test)
 ![alt "Выбор параметров"](./images/TelegramNotifications.png)
 
 
