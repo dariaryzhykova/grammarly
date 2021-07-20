@@ -3,6 +3,7 @@ package grammarly.tests;
 import com.codeborne.selenide.Condition;
 import grammarly.pages.Support;
 import io.qameta.allure.Description;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -12,9 +13,10 @@ import static io.qameta.allure.Allure.step;
 
 public class GrammarlySupportTest extends BaseTest {
 
-    final static String GRAMMARLY_SEARCH = "https://www.grammarly.com/contact";
+    final static String GRAMMARLY_SEARCH = "https://support.grammarly.com/hc/en-us";
 
     @Test
+    @Disabled
     @Description("Check if the \"Search\" works")
     @DisplayName("Verify \"search\" works")
     void verifySearch() {
@@ -26,8 +28,8 @@ public class GrammarlySupportTest extends BaseTest {
             String text = "Where can I find a receipt for my business account?";
             Support support = new Support();
             support.typeSearch(text);
+            $(".article-header").shouldBe(Condition.visible);
             $(".article-header").shouldHave(Condition.text(text));
-
         });
     }
 }

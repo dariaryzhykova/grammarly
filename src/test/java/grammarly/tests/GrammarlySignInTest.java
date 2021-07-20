@@ -4,6 +4,7 @@ import com.codeborne.selenide.Condition;
 import com.github.javafaker.Faker;
 import grammarly.pages.SignIn;
 import io.qameta.allure.Description;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -18,9 +19,10 @@ public class GrammarlySignInTest {
             password = faker.internet().password();
 
     @Test
+    @Disabled
     @Description("Check if non-existent user could not log in")
-    @DisplayName("Verify \"search\" works")
-    void verifySearch() {
+    @DisplayName("Verify \"signIn\" works")
+    void verifySignIn() {
         step("Open url: " + GRAMMARLY_SIGNIN, () ->
                 open(GRAMMARLY_SIGNIN)
         );

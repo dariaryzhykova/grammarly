@@ -4,7 +4,7 @@ plugins {
 }
 
 repositories {
-    maven { url = "https://dl.bintray.com/qameta/maven-unstable/" }
+    //maven { url = "https://dl.bintray.com/qameta/maven-unstable/" }
     mavenCentral()
 }
 
@@ -68,4 +68,8 @@ task consoleError(type: Test) {
     useJUnitPlatform {
         includeTags 'consoleError'
     }
+}
+
+test {
+    useJUnitPlatform()
 }

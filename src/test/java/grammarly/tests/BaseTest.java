@@ -2,13 +2,13 @@ package grammarly.tests;
 
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.logevents.SelenideLogger;
-import io.qameta.allure.selenide.AllureSelenide;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeAll;
 import grammarly.config.GeneralConfigImpl;
 import grammarly.helpers.AllureAttachments;
 import grammarly.helpers.DriverSettings;
 import grammarly.helpers.DriverUtils;
+import io.qameta.allure.selenide.AllureSelenide;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
 
 public class BaseTest {
     @BeforeAll
