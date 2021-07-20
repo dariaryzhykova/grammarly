@@ -1,7 +1,7 @@
 # Grammarly
 
 
-# Guid for automation test cases: https://www.grammarly.com/
+# Overview of automation for Grammarly Website: https://www.grammarly.com/
 
 ## Technology stack
 
