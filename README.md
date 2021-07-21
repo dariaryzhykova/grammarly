@@ -38,9 +38,8 @@ Automated with love
 * remoteDriverUrl (url address from selenoid or grid)
 * videoStorage (url address where you should get video)
 * threads (number of threads)
-Пример настроек перед запуском сборки в Jenkins:
 
-### Example of choosing parameters
+### Example of choosing parameters in Jenkins
 ![alt "Job Parameters"](./images/jenkinsParamsExample.png)
 
 ### How to run test from command line
